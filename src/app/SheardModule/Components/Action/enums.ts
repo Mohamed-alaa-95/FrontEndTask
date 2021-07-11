@@ -1,5 +1,5 @@
 export enum ActionModes {
-  IconWithLabel = 1,
-  IconWithoutLabel = 2,
-  IconWithLabelBottom = 3,
+  Icon = 1,
+  Item = 2,
+  Widget = 3,
 }

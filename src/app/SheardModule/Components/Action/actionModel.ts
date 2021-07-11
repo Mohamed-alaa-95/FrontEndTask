@@ -6,14 +6,14 @@ import { IAction } from './iAction';
 export class ActionModel {
   public data: IAction;
   public onClick: EventEmitter<void> = new EventEmitter<void>();
-  public get IconWithoutLabel() {
-    return this.data.mode == ActionModes.IconWithoutLabel;
+  public get Icon() {
+    return this.data.mode == ActionModes.Icon;
   }
-  public get IconWithLabel() {
-    return this.data.mode == ActionModes.IconWithLabel;
+  public get Item() {
+    return this.data.mode == ActionModes.Item;
   }
-  public get IconWithLabelBottom() {
-    return this.data.mode == ActionModes.IconWithLabelBottom;
+  public get Widget() {
+    return this.data.mode == ActionModes.Widget;
   }
   public click() {
     this.onClick.emit();

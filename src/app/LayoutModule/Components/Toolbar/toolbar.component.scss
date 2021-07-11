@@ -1,3 +1,25 @@
-.space {
-    flex: 1 1 auto;
+//Variables
+@import "../../../../assets/styles/helpers/variables";
+//Mixins
+@import "../../../../assets/styles/helpers/mixins";
+//Actions
+@import "../../../../assets/styles/Components/actions";
+mat-toolbar {
+    background: rgb(114, 83, 83);
+    height: 60px;
+    position: relative;
+    z-index: 99;
+    padding: 0 20px;
+    h3 {
+        @include font(19px, 700);
+        color: #ffffff;
+    }
+    .setting {
+        margin-left: 2%;
+        mat-icon {
+            cursor: pointer;
+            color: #bbb;
+            outline: 0;
+        }
+    }
 }

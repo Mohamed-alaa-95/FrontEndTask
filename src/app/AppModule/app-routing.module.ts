@@ -4,8 +4,8 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('../LayoutModule/layout-routing.module').then(
-        (mod) => mod.LayoutRoutingModule
+      import('../LayoutModule/layout.module').then(
+        (mod) => mod.LayoutModule
       ),
   },
 ];

@@ -9,16 +9,24 @@ export class ToolbarModel {
 
   public ActionSetter: Array<IAction> = [
     {
-      icon: 'Adb',
-      class: 'mainColor',
-      text: 'dashboard',
-      mode: ActionModes.IconWithLabel,
+      icon: 'lock_open',
+      text: 'Tranactions',
+      mode: ActionModes.Item,
     },
     {
-      icon: 'AddBox',
-      class: 'mainColor',
-      text: 'components',
-      mode: ActionModes.IconWithLabel,
+      icon: 'home',
+      text: 'Users',
+      mode: ActionModes.Item,
+    },
+    {
+      icon: 'home',
+      text: '',
+      mode: ActionModes.Icon,
+    },
+    {
+      icon: 'home',
+      text: '',
+      mode: ActionModes.Icon,
     },
   ];
   public selectAction(action: IAction) {

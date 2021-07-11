@@ -1,11 +1,12 @@
-<mat-icon mat-icon-button *ngIf="model.IconWithoutLabel" [ngClass]="model.data.class" (click)="model.click()">{{model.data.icon}}</mat-icon>
-<div *ngIf="model.IconWithLabel" class="row">
-    <mat-icon mat-icon-button [ngClass]="model.data.class" (click)="model.click()">{{model.data.icon}}</mat-icon>
-    <label>{{model.data.text}}</label></div>
-<div *ngIf="model.IconWithLabelBottom" class="row">
-    <div class="row">
-        <mat-icon mat-icon-button [ngClass]="model.data.class" (click)="model.click()">{{model.data.icon}}</mat-icon>
-    </div>
-    <div class="row">
-        <label>{{model.data.text}}</label></div>
+<mat-icon mat-icon-button *ngIf="model.Icon" (click)="model.click()">{{ model.data.icon }}
+</mat-icon>
+<div ngIf="model.Item">
+    <mat-icon mat-icon-button (click)="model.click()">{{ model.data.icon }}
+    </mat-icon>
+    <span>{{ model.data.text }}</span>
+</div>
+<div *ngIf="model.Widget">
+    <mat-icon mat-icon-button (click)="model.click()">{{ model.data.icon }}
+    </mat-icon>
+    <span>{{ model.data.text }}</span>
 </div>

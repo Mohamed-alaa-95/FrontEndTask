@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 import { AngularMaterialModule } from '../AngularMaterialModule/material.module';
 import { SharedModule } from '../SheardModule/shared.module';
 import { clientProfileRouting } from './client-profile-routing.module';
-import { ProfileComponent } from './Pages/Profile/profile.component';
 import { ProfileListComponent } from './Components/ProfileList/profileList.component';
-
+import { ProfileComponent } from './Pages/Profile/profile.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -13,7 +12,7 @@ import { ProfileListComponent } from './Components/ProfileList/profileList.compo
     SharedModule,
     clientProfileRouting,
   ],
-  declarations: [ProfileComponent, ProfileListComponent],
+  declarations: [ProfileListComponent, ProfileComponent],
   exports: [],
 })
 export class ClientProfileModule {}

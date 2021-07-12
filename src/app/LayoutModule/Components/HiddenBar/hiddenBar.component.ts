@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './hiddenBar.component.html',
   styleUrls: ['./hiddenBar.component.scss'],
 })
-export class AdminLayoutComponent {
+export class hiddenBarComponent {
   constructor() {}
 }

@@ -1,7 +1,10 @@
 <mat-toolbar>
-    <h3>Mohamed</h3>
-    <span class="example-spacer"></span>
-    <div *ngFor="let action of model.ActionSetter" class="setting">
-        <action [data]="action" (onClick)="model.selectAction(action)"> </action>
-    </div>
+  <h3>Mohamed</h3>
+  <span class="example-spacer"></span>
+  <action
+    *ngFor="let action of model.ActionSetter"
+    [data]="action"
+    (onClick)="model.selectAction(action)"
+  >
+  </action>
 </mat-toolbar>

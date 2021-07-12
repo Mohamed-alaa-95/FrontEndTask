@@ -1,12 +1,15 @@
-<mat-icon mat-icon-button *ngIf="model.Icon" (click)="model.click()">{{ model.data.icon }}
+<mat-icon mat-icon-button *ngIf="model.Icon" (click)="model.click()"
+  >{{ model.data.icon }}
 </mat-icon>
-<div ngIf="model.Item">
-    <mat-icon mat-icon-button (click)="model.click()">{{ model.data.icon }}
-    </mat-icon>
-    <span>{{ model.data.text }}</span>
+<div  *ngIf="model.Item">
+  <mat-icon mat-icon-button (click)="model.click()"
+    >{{ model.data.icon }}
+  </mat-icon>
+  <span>{{ model.data.text }}</span>
 </div>
 <div *ngIf="model.Widget">
-    <mat-icon mat-icon-button (click)="model.click()">{{ model.data.icon }}
-    </mat-icon>
-    <span>{{ model.data.text }}</span>
+  <mat-icon mat-icon-button (click)="model.click()"
+    >{{ model.data.icon }}
+  </mat-icon>
+  <span>{{ model.data.text }}</span>
 </div>

@@ -9,22 +9,27 @@ export class ToolbarModel {
 
   public ActionSetter: Array<IAction> = [
     {
-      icon: 'lock_open',
+      icon: 'https',
       text: 'Tranactions',
       mode: ActionModes.Item,
     },
     {
-      icon: 'home',
+      icon: 'verified_user',
       text: 'Users',
       mode: ActionModes.Item,
     },
     {
-      icon: 'home',
+      icon: 'dashboard_customize',
       text: '',
       mode: ActionModes.Icon,
     },
     {
-      icon: 'home',
+      icon: 'assignment_turned_in',
+      text: '',
+      mode: ActionModes.Icon,
+    },
+    {
+      icon: 'settings',
       text: '',
       mode: ActionModes.Icon,
     },

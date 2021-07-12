@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~material-icons/iconfont/material-icons.css"; */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6ff;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.material-icons {
+  font-family: "Material Icons" !important;
+}

@@ -1,10 +1,14 @@
 // Actions
 @import "../../../../assets/styles/components/actions";
-button {
-    display: flex;
-    align-items: center;
+@import "../../../../assets/styles/Helpers/mixins";
+@import "../../../../assets/styles/Helpers/variables";
+span {
+  color: rgba($mainColor, 0.8);
+  letter-spacing: 1px;
+  @include font(20px, 300);
 }
-
 mat-icon {
-    cursor: pointer;
+  cursor: pointer;
+  @include font(18px, 600);
+  color: rgba($mainColor, 0.5);
 }

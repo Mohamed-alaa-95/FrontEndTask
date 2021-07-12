@@ -5,21 +5,18 @@
 //Actions
 @import "../../../../assets/styles/Components/actions";
 mat-toolbar {
-    background: rgb(114, 83, 83);
-    height: 60px;
-    position: relative;
-    z-index: 99;
-    padding: 0 20px;
-    h3 {
-        @include font(19px, 700);
-        color: #ffffff;
-    }
-    .setting {
-        margin-left: 2%;
-        mat-icon {
-            cursor: pointer;
-            color: #bbb;
-            outline: 0;
-        }
-    }
+  background: rgb(255, 255, 255);
+  height: 65px;
+  position: relative;
+  z-index: 99;
+  h3 {
+    @include font(19px, 700);
+    color: #757575;
+  }
+  action {
+    margin: 1%;
+  }
+  mat-icon {
+    cursor: pointer;
+  }
 }

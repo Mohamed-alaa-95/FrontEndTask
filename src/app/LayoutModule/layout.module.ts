@@ -7,7 +7,7 @@ import { AngularMaterialModule } from '../AngularMaterialModule/material.module'
 import { SharedModule } from '../SheardModule/shared.module';
 import { ToolbarComponent } from './Components/Toolbar/toolbar.component';
 import { AdminLayoutModel } from './Components/AdminLayout/adminLayoutModel';
-
+import { hiddenBarComponent } from './Components/HiddenBar/hiddenBar.component';
 @NgModule({
   imports: [
     RouterModule,
@@ -16,7 +16,7 @@ import { AdminLayoutModel } from './Components/AdminLayout/adminLayoutModel';
     SharedModule,
     LayoutRoutingModule,
   ],
-  declarations: [AdminLayoutComponent, ToolbarComponent],
+  declarations: [AdminLayoutComponent, ToolbarComponent, hiddenBarComponent],
 
   exports: [AdminLayoutComponent],
   providers: [AdminLayoutModel],
